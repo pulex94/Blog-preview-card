@@ -1,0 +1,128 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 600, 800
+ */
+
+@font-face {
+  font-family: Figtree-ExtraBold;
+  src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-SemiBold;
+  src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-Italic;
+  src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 10px;
+  font-family: Figtree;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2,
+.content-bold {
+  font-family: Figtree-ExtraBold;
+  transition: ease-in-out 0.2s;
+}
+
+h2:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.content-semibold {
+  font-family: Figtree-SemiBold;
+}
+
+.description {
+  color: hsl(0, 0%, 50%);
+}
+
+.container {
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 4px 1px #000000;
+  box-shadow: 5px 5px 4px 1px #000000;
+}
+
+button {
+  width: fit-content;
+  background-color: hsl(47, 88%, 63%);
+  border: 0px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer svg {
+  border-radius: 15px;
+}
+.logo {
+  margin: 5px;
+}
+
+#author {
+  font-size: 15px;
+}
